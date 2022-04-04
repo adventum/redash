@@ -48,7 +48,7 @@ function getDefaultColumnsOptions(columns: any) {
     type: col.type,
     // @ts-expect-error ts-migrate(7053) FIXME: Element implicitly has an 'any' type because expre... Remove this comment to see the full error message
     displayAs: displayAs[col.type] || "string",
-    template: `#${col.name}#`
+    template: `#${col.name}#`,
     visible: true,
     order: 100000 + index,
     title: getColumnNameWithoutType(col.name),
